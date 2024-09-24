@@ -1,0 +1,42 @@
+### Create task
+POST localhost:8080/task
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiUk9MRV9VU0VSIiwic3ViIjoiOTk4OTE1NzIxMjEzIiwiaWF0IjoxNzI1MzgwMjA5LCJleHAiOjE3MjU0NjY2MDl9.X1u3Mc9traZC4qaWCylNAd9S-2rZlrR8vTKBuiTazyY
+
+{
+  "title": "Maktab 2",
+  "content": "Maktabga borish 2"
+}
+
+### Get all task
+GET localhost:8080/task
+
+
+### Get profile task
+GET localhost:8080/task/my
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiUk9MRV9VU0VSIiwic3ViIjoiOTk4OTE1NzIxMjEzIiwiaWF0IjoxNzI1MzgwMjA5LCJleHAiOjE3MjU0NjY2MDl9.X1u3Mc9traZC4qaWCylNAd9S-2rZlrR8vTKBuiTazyY
+
+
+### Get by id
+GET localhost:8080/task/402880e691b8ab270191b8ad7ea30001
+
+
+### Update task
+PUT localhost:8080/task/402880e691b8ab270191b8ad7ea30001
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiUk9MRV9VU0VSIiwic3ViIjoiOTk4OTE1NzIxMjEzIiwiaWF0IjoxNzI1MzgwMjA5LCJleHAiOjE3MjU0NjY2MDl9.X1u3Mc9traZC4qaWCylNAd9S-2rZlrR8vTKBuiTazyY
+
+
+{
+  "title": "Sartarosh ",
+  "content": "Sartaroshba borib sochni oldirish kerak mazgi.5"
+}
+
+### Delete
+DELETE localhost:8080/task/402880e59179f19a019179f215800001
+Authorization: Basic OTk4OTE1NzIxMjEyOjEyMzQ1Ng==
+
+
+### Delete as admin
+DELETE localhost:8080/task/402880e59179f19a019179f382d00002/admin
+Authorization: Basic OTk4OTE1NzIxMjEzOjEyMzQ1Ng==

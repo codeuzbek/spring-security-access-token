@@ -1,0 +1,28 @@
+### Profile Registration
+POST localhost:8080/profile/registration
+Content-Type: application/json
+
+{
+  "name": "Valish",
+  "surname": "Valiyev",
+  "phone": "998915721212",
+  "password": "123456",
+  "role": "ROLE_ADMIN"
+}
+
+### Profile Authorization
+POST localhost:8080/profile/authorization
+Content-Type: application/json
+
+{
+  "phone": "998915721213",
+  "password": "123456"
+}
+
+### RefreshToken
+POST localhost:8080/profile/access-token
+Content-Type: application/json
+
+{
+  "refreshToken": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiUk9MRV9VU0VSIiwic3ViIjoiOTk4OTE1NzIxMjEzIiwiaWF0IjoxNzI3MTYxMzE2LCJleHAiOjE3Mjk3NTMzMTZ9.H9YSTuu3fYGsh0UMUrVAG2ToJNAzDVOtXLxYNMVjaZk"
+}
